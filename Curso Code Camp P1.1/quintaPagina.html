@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="quintaPagina.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Service Experience Survey Form</h1>
+        <p class="footer">Thank you for taking the time to answer this Survey</p>
+    </section>
+    <div class="cuestionario">
+        <form>
+        <label class="item" for="name">Name <input placeholder=" Enter your name" type="text" required/></label>
+        <label class="item" for="email">Email <input placeholder=" Enter your email" type="email" required></label>
+        <label class="item" for="age">Age (optional)<input placeholder=" Age" type="number"></label>
+        <label class="item" for="role">Role
+            <select id="role" name="role" id="role">
+                <option value="">Select current role</option>
+                <option value="1">Customer</option>
+                <option value="2">Employee</option>
+                <option value="3">Business Partner</option>
+                <option value="4">Manager or Supervisor</option>
+                <option value="5">Investor</option>
+                <option value="6">Prospective Customer</option>
+            </select>
+        </label>
+        <fieldset class="experience">
+            <legend>How has your experience been on our website? (required)</legend>
+            <label><input class="inline" name="experience" type="radio"> Excellent</label>
+            <label><input class="inline" name="experience" type="radio"> Good</label>
+            <label><input class="inline" name="experience" type="radio"> Neutral</label>
+            <label><input class="inline" name="experience" type="radio"> Unsatisfactory</label>
+            <label><input class="inline" name="experience" type="radio"> Poor</label>
+        </fieldset>
+        <label class="item">What is your favorite part of our website?
+            <select id="fav" name="fav">
+                <option value="">Select an option</option>
+                <option value="1">Product / Service Page</option>
+                <option value="2">About Us Section</option>
+                <option value="3">Design</option>
+                <option value="4">Contact Page</option>
+            </select>
+        </label>
+        <fieldset class="improved">
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+            <label><input class="inline" type="checkbox"> Product / Service Page</label>
+            <label><input class="inline" type="checkbox"> About Us Section</label>
+            <label><input class="inline" type="checkbox"> Design</label>
+            <label><input class="inline" type="checkbox"> Contact Page</label>
+        </fieldset>
+        <label class="item">Comments or suggestions?
+            <textarea placeholder="I will like to..."></textarea>
+        </label>
+        <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>
