@@ -1,3 +1,104 @@
 header{
     font-weight: bold;
+    font-size: 1.7rem;
+}
+
+body{
+    font-size: 1.1rem;
+}
+
+section{
+    padding: 2rem;
+}
+
+#navbar{
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width:17rem;
+    background-color: #363636;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,1);
+    z-index: 1000;
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#navbar li{
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 0.6rem 0;
+    border-radius: 0.7rem;
+    font-weight: bold;
+}
+
+#navbar a{
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+#navbar header{
+    margin: 0.5rem 2rem;
+}
+
+#main-doc{
+    margin-left:17.5rem;
+    margin-right: 15rem;
+    padding: 10px;
+}
+
+.code-container {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    overflow-x: auto;
+}
+
+.code-container code {
+    display: block;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width:768px){
+    body{
+        font-size: 14px;
+    }
+
+    #navbar{
+        width:100%;
+        height: auto;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #main-doc{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 450px;
+    }
+
+    #navbar li{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
 }
