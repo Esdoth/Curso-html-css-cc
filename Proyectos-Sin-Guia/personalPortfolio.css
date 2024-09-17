@@ -18,6 +18,10 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -153,8 +157,7 @@ img {
     width: 100%;
 }
 
-a {
-    text-decoration: none;
+.project a {
     color: white;
 }
 
@@ -185,6 +188,9 @@ a {
     color: #e28229;
 }
 
+.contact-section {
+    min-height: 100vh;
+}
 
 @media (max-width: 800px) {
     .logo {
