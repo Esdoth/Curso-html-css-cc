@@ -20,6 +20,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 header {
@@ -109,7 +110,7 @@ h1, h2 {
 .projects-section {
     text-align: center;
     padding: 6rem 2rem;
-    background: #75583a;
+    background: #725e48;
     min-height: 100vh;
 }
 
@@ -190,6 +191,39 @@ img {
 
 .contact-section {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+    background: #584639;
+    color: white;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size:2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(5px)
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
 }
 
 @media (max-width: 800px) {
